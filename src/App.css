@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+
+
+*{
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box{
+    width: 80%;
+    position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.button-number{
+    margin: 5px 20px 5px 20px;
+    width: 50px;
+    border-radius: 50%;
+    outline: medium;
+    border: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.buttons {
+    border: 1px solid lightgray;
+    margin-top: 10px;
+}
+
+.row .equals{
+    color: white;
+    background-color: orange;
+}
+
+.row .clear-button{
+    position: absolute;
+    top: 0;
+    left: 90%;
+    width: 10%;
+}
+
+.form-control{
+    font-size: 20px;
+}
+
+.button-number:focus, .button-number:active{
+    border-radius: 50%;
+    outline: medium;
 }
