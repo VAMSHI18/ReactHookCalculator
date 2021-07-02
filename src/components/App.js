@@ -15,6 +15,9 @@ const App = () => {
   const numberClickHandler = (e) => {
     // console.log(e.target);
     //  console.log(`Value: ${e.target.innerText}`);
+    if(e.target.tagName !== "BUTTON" ) {
+      return;
+    }
     let inputValue = e.target.innerText;
     let result = null;
      if(inputValue === '='){
